@@ -1,1 +1,1 @@
-first day of C language
+0x01. C - Variables, if, else, while
