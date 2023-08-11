@@ -1,8 +1,11 @@
 #include <stdio.h>
 
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ * main - prints the alphabet in lowercase,
+ * followed by a new line, except q and e
+ *
+ * Return: Aways 0 (Sucess)
+ */
 int main(void)
 {
   char ch = 'a';
