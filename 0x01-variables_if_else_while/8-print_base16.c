@@ -5,11 +5,14 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-  char ch = '0';
-  while (ch <= 'F')
+  int digit = 48;
+  
+  while (digit <= 102)
     {
-      putchar(ch);
-        ch++;
+      putchar(digit);
+      if (digit == 57)
+	digit += 39;
+      digit++;
     }
   putchar('\n');
   return (0);
