@@ -1,33 +1,38 @@
 #include <stdio.h>
-/**                                                                                           
- * main -a program that prints all possible combinations of single-digit numbers.           
- * followed by a new line, using putchar                                                      
- *                                                                                           
- * Return: Always 0 (Success)                                                                 
+/**
+ * main - prints all possible different combinations of two digits
+ *
+ * Return: ALways 0 (Success)
  */
 int main(void)
 {
-  int digit1 = '0', digit2;
-  while (digit1 <= '9')
-    {
-      digit2 = 0;
-      while (digit2 <= 9)
-        {
-          if (digit1 != digit2 && digit1 < digit2) /*01 and 10 are considered the same combination of the two digits 0 and 1*/
-            {
-              putchar(digit1 + 48);
-              putchar(digit2 + 48);
-		if (digit1 + digit2 != 17)
-		  {
-		      putchar(',');
-                      putchar(' ');
-	          }
-	      }
-	  digit2++;
-        }
 
-      digit1++;
-    }
-  putchar('\n');
-  return (0);
+	int n, m;
+
+	for (n = 48; n <= 56; n++)
+	{
+
+		for (m = 49; m <= 57; m++)
+		{
+
+			if (m > n)
+			{
+        
+				putchar(n);
+				putchar(m);
+				if (n != 56 || m != 57)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+
+			}
+
+		}
+
+	}
+
+	putchar('\n');
+
+	return (0);
 }
