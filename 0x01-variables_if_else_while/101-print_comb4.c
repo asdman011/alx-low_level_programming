@@ -9,24 +9,24 @@
 int main(void)
 
 {
-	int digit1, digit2, digit3;
+	int n, m, l;
 
-	for (digit1 = 48; digit1 < 58; digit1++)
+	for (n = 48; n < 58; n++)
 	{
-		for (digit2 = 49; digit2 < 58; digit2++)
+		for (m = 49; m < 58; m++)
 		{
-			for (digit3 = 50; digit3 < 58; digit3++)
+			for (l = 50; l < 58; l++)
 			{
-				if (digit3 > digit2 && digit2 > digit1)
+				if (l > m && m > n)
 
 				{
-					putchar(digit1);
+					putchar(n);
 
-					putchar(digit2);
+					putchar(m);
 
-					putchar(digit3);
+					putchar(l);
 
-					if (digit1 != 55 || digit2 != 56)
+					if (n != 55 || m != 56)
 
 					{
 						putchar(',');
