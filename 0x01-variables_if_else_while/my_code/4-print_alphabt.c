@@ -6,31 +6,16 @@
  *
  * Return: Aways 0 (Sucess)
  */
-
 int main(void)
-
 {
-
-	char ch = 'a';
-
-	while (ch <= 'z')
-
-	{
-
-		if (ch != 'e' && ch != 'q')
-
-	{
-
-		putchar(ch);
-
-	}
-
-		ch++;
-
-	}
-
-		putchar('\n');
-
-	return (0);
-
+  char ch = 'a';
+  while (ch <= 'z')
+    {
+      if (ch == 'q' || ch =='e')
+	ch++;
+      putchar(ch);
+        ch++;
+    }
+  putchar('\n');
+  return (0);
 }

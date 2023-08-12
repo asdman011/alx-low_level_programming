@@ -6,23 +6,14 @@
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
-
 {
-
-	int n;
-
-	for (n = 48; n < 58; n++)
-
-	{
-
-		putchar(n);
-
-	}
-
-		putchar('\n');
-
-	return (0);
-
+  int n = '0';
+  while (n <= '9')
+    {
+      putchar(n);
+        n++;
+    }
+  putchar('\n');
+  return (0);
 }
