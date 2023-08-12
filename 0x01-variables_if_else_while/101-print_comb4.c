@@ -42,7 +42,7 @@ int main(void)
 
 	}
 
-	putchar('\digit1');
+	putchar('\n');
 
 	return (0);
 }
