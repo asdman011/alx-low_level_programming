@@ -2,21 +2,30 @@
 #include <stdio.h>
 
 /**
- * _strchr - Locates a character in a string
+ * _strpbrk - Search for a string of any set of bytes.
  * @s: type char pointer
- * @c: type char memory area
- * Return: NULL
+ * @accept: type char pointer
+ * Return: s or null if no such byte type is found.
  */
-char *_strchr(char *s, char c)
+char *_strpbrk(char *s, char *accept)
 {
-	while (*s != '\0')
+	int x, y;
+	char *p;
+
+	x = 0;
+	while (s[x] != '\0')
 	{
-		if (*s == c)
-			return (s);
-		s++;
+		y = 0;
+		while (accept[y] != '\0')
+		{
+			if (accept[y] == s[x])
+			{
+				p = &s[x];
+				return (p);
+			}
+			y++;
+		}
+		x++;
 	}
-	if (*s == c)
-		return (s);
-	else
-		return (NULL);
+	return (NULL);
 }
